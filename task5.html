@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+        <label for="userrollno">Roll No :</label>
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" value="" name="userrollno" pattern=".{8,}" title="Eight or more characters"><br><br>
+
+        <label for="username">Student name :</label>
+         &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" value="" id="username" name="username" pattern="[A-Za-z ]" title="Please enter your valid name"><br><br>
+
+        <label for="userfathername">Father's Name :</label>
+         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" value="" name="userfathername" pattern="[A-Za-z ]" title="Please enter your valid name"><br><br>
+
+        <label for="userdob">Date of birth :</label>
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="date" value="" name="userdob">(DD-MM-YYYY) <br><br>
+
+        <label for="userphone">Mobile no. :</label>
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" value=""  name="userphone" placeholder="+91" readonly> <input type="text" value="" id="userphone" name="userphone"><br><br>
+
+        <label for="useremail">Email id :</label>
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="email" value="" name="useremail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
+
+        <label for="userpassword">Password :</label>
+         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="password" value="" name="userpassword" pattern=".{8,}" title="Eight or more characters"><br><br>
+
+        <label for="gender">Gender :</label>
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="radio" value="male" name="gender">male
+        <input type="radio" value="female" name="gender">Female
+        <br><br>
+
+        <label for="userdepartment">Department:</label>
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input type="checkbox" value="" name="userdepartment">CSE
+        <input type="checkbox" value="" name="userdepartment">IT
+        <input type="checkbox" value="" name="userdepartment">ECE
+        <input type="checkbox" value="" name="userdepartment">Civil
+        <input type="checkbox" value="" name="userdepartment">Mech
+        <br><br>
+
+        <label for="usercourse">Course :</label>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input list="course" value="" name="usercourse" placeholder="....Select Current Course's........">
+        <datalist id="course">
+            <option value="Full Stack Web  Development">
+            <option value="Full Stack Java  Development">
+            <option value="Full Stack Python  Development">
+            <option value="Full Stack App  Development">
+        </datalist>
+        <br><br>
+
+        <label for="userphoto">Student photo :</label>
+         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="file" value="" name="userphoto"><br><br>
+
+        <label for="usercity">City :</label>
+       &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input type="text" value="" name="usercity"><br><br>
+
+        <label for="useraddress">Address :</label>
+       &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <textarea name="address" id="useraddress" cols="50" rows="4"></textarea><br><br>
+
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="submit" value="Register">
+
+
+
+    </form>
+</body>
+</html>
